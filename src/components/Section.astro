@@ -1,0 +1,10 @@
+---
+const { color } = Astro.props;
+---
+
+<section
+  class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative"
+  data-header-color={color}
+>
+  <slot />
+</section>

@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro"
+import HeroSection from '../components/HeroSection.astro'
+import ChargerSection from '../components/ChargerSection.astro'
+import TeamSection from "../components/TeamSection.astro"
+---
+
+<Layout title="Electric Airplanes & Clean Energy | Beta">
+  <nav class="fixed top-0 w-full z-40 sm:px-12 p-6 flex justify-between items-center">
+		<a href="/"><img src="/beta.png " alt="Beta Logo" class="h-6 sm:h-8 w-auto" /></a>
+		<ul class="gap-8 text-white hidden sm:flex">
+      <li><a href="/" class="hover:underline underline-offset-4">Aircraft</a></li>
+      <li><a href="/" class="hover:underline underline-offset-4">Charging</a></li>
+      <li><a href="/" class="hover:underline underline-offset-4">Team</a></li>
+	</nav>
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
+  >
+    <div class="snap-center">
+      <HeroSection />
+    </div>
+    <div class="snap-center">
+      <ChargerSection />
+    </div>
+    <div class="snap-center">
+      <TeamSection />
+    </div>
+  </main>
+</Layout>
